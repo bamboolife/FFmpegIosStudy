@@ -10,6 +10,14 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextView *content;
+
+- (IBAction)protocolButton:(id)sender;
+- (IBAction)avformatButton:(id)sender;
+- (IBAction)avcodecButton:(id)sender;
+- (IBAction)avfilterButton:(id)sender;
+- (IBAction)configureButton:(id)sender;
+- (IBAction)bitStreamFilterButton:(id)sender;
 
 @end
 
