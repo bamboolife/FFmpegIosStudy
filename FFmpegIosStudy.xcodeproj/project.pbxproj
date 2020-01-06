@@ -30,6 +30,7 @@
 		A4577B0C23C1C7B2001A8350 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4577B0523C1C7B2001A8350 /* libswscale.a */; };
 		A4577B0D23C1EE18001A8350 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4577B0123C1C7B2001A8350 /* libavcodec.a */; };
 		A4577B1D23C31662001A8350 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4577B1C23C31662001A8350 /* TableViewController.m */; };
+		A4577B2623C3315C001A8350 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4577B2523C3315C001A8350 /* VideoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,8 @@
 		A4577B0523C1C7B2001A8350 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = "FFmpegIosStudy/FFmpeg-iOS/lib/libswscale.a"; sourceTree = "<group>"; };
 		A4577B1B23C31662001A8350 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		A4577B1C23C31662001A8350 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		A4577B2423C3315C001A8350 /* VideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		A4577B2523C3315C001A8350 /* VideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +165,8 @@
 				A4577AC523C18295001A8350 /* main.m */,
 				A4577B1B23C31662001A8350 /* TableViewController.h */,
 				A4577B1C23C31662001A8350 /* TableViewController.m */,
+				A4577B2423C3315C001A8350 /* VideoViewController.h */,
+				A4577B2523C3315C001A8350 /* VideoViewController.m */,
 			);
 			path = FFmpegIosStudy;
 			sourceTree = "<group>";
@@ -336,6 +341,7 @@
 			files = (
 				A4577ABB23C18293001A8350 /* ViewController.m in Sources */,
 				A4577B1D23C31662001A8350 /* TableViewController.m in Sources */,
+				A4577B2623C3315C001A8350 /* VideoViewController.m in Sources */,
 				A4577AB523C18293001A8350 /* AppDelegate.m in Sources */,
 				A4577AC623C18295001A8350 /* main.m in Sources */,
 				A4577AB823C18293001A8350 /* SceneDelegate.m in Sources */,
@@ -521,7 +527,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sundy.FFmpegIosStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -543,7 +549,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sundy.FFmpegIosStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

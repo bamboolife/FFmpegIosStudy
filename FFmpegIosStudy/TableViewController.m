@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-   arrayData = [NSArray arrayWithObjects:@"FFmpeg Info",@"FFmpeg解码",@"FFmpeg编码",@"FFmpeg推流", nil];
+   arrayData = [NSArray arrayWithObjects:@"FFmpeg Info",@"FFmpeg解码",@"FFmpeg编码",@"FFmpeg推流",@"简易视频播放器", nil];
 }
 
 #pragma mark - Table view data source
@@ -76,8 +76,20 @@
         
         //4.显示弹框
        // [self presentViewController:alert animated:YES completion:nil];
-    UIViewController *ffmpegInfo=[[self storyboard] instantiateViewControllerWithIdentifier:@"ffmpegInfo"];
-    [[self navigationController] pushViewController:ffmpegInfo animated:true];
+    
+    if(indexPath.row==0){
+       UIViewController *ffmpegInfo=[[self storyboard] instantiateViewControllerWithIdentifier:@"ffmpegInfo"];
+       [[self navigationController] pushViewController:ffmpegInfo animated:true];
+    }else if (indexPath.row==1){
+        
+    }else if (indexPath.row==2){
+        
+    }else if (indexPath.row==3){
+        
+    }else if (indexPath.row==4){
+        UIViewController *videoPlay=[[self storyboard] instantiateViewControllerWithIdentifier:@"videoview"];
+               [[self navigationController] pushViewController:videoPlay animated:true];
+    }
 }
 
 /*

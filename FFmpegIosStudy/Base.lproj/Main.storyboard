@@ -99,6 +99,24 @@
             </objects>
             <point key="canvasLocation" x="871" y="577"/>
         </scene>
+        <!--简易视频播放器-->
+        <scene sceneID="Uix-Mr-hbJ">
+            <objects>
+                <viewController storyboardIdentifier="videoview" title="简易视频播放器" id="ly3-oY-zhn" customClass="VideoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MNG-54-QNY"/>
+                        <viewControllerLayoutGuide type="bottom" id="hoK-Tb-HFC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vcn-nF-0LB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3IH-dt-pxl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1731" y="576"/>
+        </scene>
         <!--FFmpeg功能练习-->
         <scene sceneID="X1S-1u-9iS">
             <objects>
