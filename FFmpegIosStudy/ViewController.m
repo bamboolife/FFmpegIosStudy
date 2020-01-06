@@ -25,6 +25,20 @@
     //av_version_info();
     NSString * info_ns=[NSString stringWithFormat:@"%s",info];
     self.content.text=info_ns;
+    
+//    NSString *fromFile=[[NSBundle mainBundle] pathForResource:@"test.mp4" ofType:nil];
+//    NSString *toFile=@"/Users/sundy/Desktop/Output/video.gif";
+//    int argc=4;
+//    char **arguments=calloc(argc, sizeof(char*));
+//    if (arguments!=NULL) {
+//        arguments[0]="ffmpeg";
+//        arguments[1]="-i";
+//        arguments[2]=(char *)[fromFile UTF8String];
+//        arguments[3]=(char *)[toFile UTF8String];
+//        if (!ffmpeg_main(argc, arguments)) {
+//            NSLog(@"生成s成功");
+//        }
+//    }
 }
 
 

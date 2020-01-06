@@ -29,6 +29,7 @@
 		A4577B0B23C1C7B2001A8350 /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4577B0423C1C7B2001A8350 /* libavdevice.a */; };
 		A4577B0C23C1C7B2001A8350 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4577B0523C1C7B2001A8350 /* libswscale.a */; };
 		A4577B0D23C1EE18001A8350 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4577B0123C1C7B2001A8350 /* libavcodec.a */; };
+		A4577B1D23C31662001A8350 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4577B1C23C31662001A8350 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,8 @@
 		A4577B0323C1C7B2001A8350 /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = "FFmpegIosStudy/FFmpeg-iOS/lib/libavfilter.a"; sourceTree = "<group>"; };
 		A4577B0423C1C7B2001A8350 /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = "FFmpegIosStudy/FFmpeg-iOS/lib/libavdevice.a"; sourceTree = "<group>"; };
 		A4577B0523C1C7B2001A8350 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = "FFmpegIosStudy/FFmpeg-iOS/lib/libswscale.a"; sourceTree = "<group>"; };
+		A4577B1B23C31662001A8350 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		A4577B1C23C31662001A8350 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +160,8 @@
 				A4577AC123C18295001A8350 /* LaunchScreen.storyboard */,
 				A4577AC423C18295001A8350 /* Info.plist */,
 				A4577AC523C18295001A8350 /* main.m */,
+				A4577B1B23C31662001A8350 /* TableViewController.h */,
+				A4577B1C23C31662001A8350 /* TableViewController.m */,
 			);
 			path = FFmpegIosStudy;
 			sourceTree = "<group>";
@@ -330,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4577ABB23C18293001A8350 /* ViewController.m in Sources */,
+				A4577B1D23C31662001A8350 /* TableViewController.m in Sources */,
 				A4577AB523C18293001A8350 /* AppDelegate.m in Sources */,
 				A4577AC623C18295001A8350 /* main.m in Sources */,
 				A4577AB823C18293001A8350 /* SceneDelegate.m in Sources */,
