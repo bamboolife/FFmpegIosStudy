@@ -1,4 +1,24 @@
 # FFmpegIosStudy
+### 编译iOS下FFmpeg
+- FFmpeg可以多平台使用，如果要在ios平台使用，需要编译成ios能用的库
+### 编译前的准备
+#### （1）安装 gas-preprocessor
+安装步骤（依次执行执行下面的命令）
+```
+sudo git clone https://github.com/bigsen/gas-preprocessor.git  /usr/local/bin/gas
+sudo cp /usr/local/bin/gas/gas-preprocessor.pl /usr/local/bin/gas-preprocessor.pl
+sudo chmod 777 /usr/local/bin/gas-preprocessor.pl
+sudo rm -rf /usr/local/bin/gas/
+```
+#### （2）安装 yams
+- yasm是汇编编译器，因为ffmpeg中为了提高效率用到了汇编指令，所以编译时需要安装
+- 安装步骤（依次执行下面命令）：
+```
+curl http://www.tortall.net/projects/yasm/releases/yasm-1.2.0.tar.gz -o yasm-1.2.0.gz
+tar -zxvf yasm-1.2.0.gz
+cd yasm-1.2.0
+./configure && make -j 4 && sudo make install 
+```
 
 ### 编译ffmpeg iOS静态库出错总结
 
