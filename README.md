@@ -99,6 +99,21 @@ git clone https://github.com/kewlbear/FFmpeg-iOS-build-script.git
 ```
 ./buils-ffmpeg.sh
 ```
+#### 运行完毕就会生成：
+- ffmpeg-4.2、FFmpeg-iOS 、scratch、thin 等这些文件夹,FFmpeg-iOs就是我们需要的库
+
+### iOS集成FFmpeg简单说明
+#### 1，新建一个空项目，在Link Binary With Libraries 里添加
+- libz.tbd
+- libbz2.tbd
+- libiconv.tbd
+- CoreMedia.framework
+- VideoToolbox.framework
+- AVFoundation.framework
+#### 2，导入库文件
+- 将FFmpeg-ios文件夹拖到工程里面
+- 设置 Header Search Paths 路径，指向 项目中include目录 。
+
 
 ### 编译ffmpeg iOS静态库出错总结
 
