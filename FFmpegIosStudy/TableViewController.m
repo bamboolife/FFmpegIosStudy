@@ -81,7 +81,8 @@
        UIViewController *ffmpegInfo=[[self storyboard] instantiateViewControllerWithIdentifier:@"ffmpegInfo"];
        [[self navigationController] pushViewController:ffmpegInfo animated:true];
     }else if (indexPath.row==1){
-        
+        UIViewController *decoder=[[self storyboard] instantiateViewControllerWithIdentifier:@"decoder"];
+        [[self navigationController] pushViewController:decoder animated:true];
     }else if (indexPath.row==2){
         
     }else if (indexPath.row==3){

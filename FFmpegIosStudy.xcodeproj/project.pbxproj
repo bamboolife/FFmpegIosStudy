@@ -31,6 +31,8 @@
 		A4577B0D23C1EE18001A8350 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4577B0123C1C7B2001A8350 /* libavcodec.a */; };
 		A4577B1D23C31662001A8350 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4577B1C23C31662001A8350 /* TableViewController.m */; };
 		A4577B2623C3315C001A8350 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4577B2523C3315C001A8350 /* VideoViewController.m */; };
+		A4577B2A23C350C5001A8350 /* DecoderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4577B2923C350C5001A8350 /* DecoderViewController.m */; };
+		A4577B2E23C357B3001A8350 /* res.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A4577B2D23C357B3001A8350 /* res.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,9 @@
 		A4577B1C23C31662001A8350 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		A4577B2423C3315C001A8350 /* VideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		A4577B2523C3315C001A8350 /* VideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		A4577B2823C350C5001A8350 /* DecoderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecoderViewController.h; sourceTree = "<group>"; };
+		A4577B2923C350C5001A8350 /* DecoderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecoderViewController.m; sourceTree = "<group>"; };
+		A4577B2D23C357B3001A8350 /* res.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = res.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +156,8 @@
 		A4577AB223C18293001A8350 /* FFmpegIosStudy */ = {
 			isa = PBXGroup;
 			children = (
+				A4577B2D23C357B3001A8350 /* res.bundle */,
+				A4577B2723C35099001A8350 /* Decoder */,
 				A4577AFD23C1BD78001A8350 /* FFmpeg-iOS */,
 				A4577AB323C18293001A8350 /* AppDelegate.h */,
 				A4577AB423C18293001A8350 /* AppDelegate.m */,
@@ -207,6 +214,15 @@
 				A4577AE923C18568001A8350 /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4577B2723C35099001A8350 /* Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				A4577B2823C350C5001A8350 /* DecoderViewController.h */,
+				A4577B2923C350C5001A8350 /* DecoderViewController.m */,
+			);
+			path = Decoder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +331,7 @@
 				A4577AC323C18295001A8350 /* LaunchScreen.storyboard in Resources */,
 				A4577AC023C18295001A8350 /* Assets.xcassets in Resources */,
 				A4577ABE23C18293001A8350 /* Main.storyboard in Resources */,
+				A4577B2E23C357B3001A8350 /* res.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4577ABB23C18293001A8350 /* ViewController.m in Sources */,
+				A4577B2A23C350C5001A8350 /* DecoderViewController.m in Sources */,
 				A4577B1D23C31662001A8350 /* TableViewController.m in Sources */,
 				A4577B2623C3315C001A8350 /* VideoViewController.m in Sources */,
 				A4577AB523C18293001A8350 /* AppDelegate.m in Sources */,
