@@ -22,19 +22,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor=[UIColor blackColor];
-    NSString *videoUrl=@"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4";
+   
     //设置本地视频路径
-   // NSString *mpath=[[NSBundle mainBundle] pathForResource:@"a" ofType:@"mp4"];
-
-    //NSURL *url=[NSURL fileURLWithPath:mpath];
-
-    //AVAsset *asset = [AVAsset assetWithURL:url];
-
-  //  self.item=[AVPlayerItem playerItemWithAsset:asset];
-    NSURL *movieURL=[NSURL URLWithString:videoUrl];
+    NSString *mpath=[[NSBundle mainBundle] pathForResource:@"res.bundle/sintel" ofType:@"mov"];
+    NSURL *url=[NSURL fileURLWithPath:mpath];
+    AVAsset *asset = [AVAsset assetWithURL:url];
+    self.item=[AVPlayerItem playerItemWithAsset:asset];
+   //-----------------------------------------------
+    //NSString *videoUrl=@"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4";
+    //NSURL *movieURL=[NSURL URLWithString:videoUrl];
     //设置流媒体视频路径
-    self.item=[AVPlayerItem playerItemWithURL:movieURL];
-
+    //self.item=[AVPlayerItem playerItemWithURL:movieURL];
+    //-------------------------------------------------
     //设置AVPlayer中的AVPlayerItem
     self.player=[AVPlayer playerWithPlayerItem:self.item];
 
@@ -106,6 +105,10 @@
         NSTimeInterval result = startSeconds + durationSeconds;// 计算缓冲总进度
         return result;
     }
+- (void)dealloc
+{
+    self.moviePlayer=nil;
+}
 /*
 #pragma mark - Navigation
 

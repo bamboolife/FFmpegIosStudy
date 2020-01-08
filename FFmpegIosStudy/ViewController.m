@@ -23,7 +23,7 @@
     sprintf(info, "%s\n", avcodec_configuration());
     printf("%s\n", avcodec_configuration());
     //av_version_info();
-    NSString * info_ns=[NSString stringWithFormat:@"%s",info];
+    NSString * info_ns=[NSString stringWithFormat:@"%s,av_version_info=%s",info,av_version_info()];
     self.content.text=info_ns;
     
 //    NSString *fromFile=[[NSBundle mainBundle] pathForResource:@"test.mp4" ofType:nil];
@@ -156,6 +156,27 @@
         sprintf(info, "%s[%10s]\n", info, bsf->name);
         bsf=av_bsf_iterate(&opaque);
     }
+    NSString * info_ns = [NSString stringWithFormat:@"%s", info];
+    self.content.text=info_ns;
+}
+
+- (IBAction)metadataButton:(id)sender {
+    char input_str_full[500]={0};
+    char info[1000]={0};
+    NSString *myBundlePath=[[NSBundle mainBundle] pathForResource:@"res" ofType:@"bundle"];
+    NSBundle *myBundle=[NSBundle bundleWithPath:myBundlePath];
+    NSString *videoPath=[myBundle pathForResource:@"sintel" ofType:@"mov"];
+    sprintf(input_str_full,"%s",[videoPath UTF8String]);
+    AVFormatContext *fmt_ctx=NULL;
+    AVDictionaryEntry *tag=NULL;
+    int ret=avformat_open_input(&fmt_ctx, input_str_full, NULL, NULL);
+    if(ret==0){
+        while ((tag=av_dict_get(fmt_ctx->metadata, "", tag, AV_DICT_IGNORE_SUFFIX))) {
+             printf("%s=%s\n", tag->key, tag->value);
+             sprintf(info, "%s[]  %s=%s\n",info,tag->key,tag->value);
+        }
+    }
+    avformat_close_input(&fmt_ctx);
     NSString * info_ns = [NSString stringWithFormat:@"%s", info];
     self.content.text=info_ns;
 }

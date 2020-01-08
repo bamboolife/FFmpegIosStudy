@@ -18,6 +18,7 @@
 - (IBAction)avfilterButton:(id)sender;
 - (IBAction)configureButton:(id)sender;
 - (IBAction)bitStreamFilterButton:(id)sender;
+- (IBAction)metadataButton:(id)sender;
 
 @end
 

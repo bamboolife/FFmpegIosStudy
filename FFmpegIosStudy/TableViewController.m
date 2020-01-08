@@ -86,10 +86,11 @@
     }else if (indexPath.row==2){
         
     }else if (indexPath.row==3){
-        
+        UIViewController *stream=[[self storyboard] instantiateViewControllerWithIdentifier:@"stream"];
+        [[self navigationController] pushViewController:stream animated:true];
     }else if (indexPath.row==4){
         UIViewController *videoPlay=[[self storyboard] instantiateViewControllerWithIdentifier:@"videoview"];
-               [[self navigationController] pushViewController:videoPlay animated:true];
+       [[self navigationController] pushViewController:videoPlay animated:true];
     }
 }
 

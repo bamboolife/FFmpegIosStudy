@@ -78,6 +78,8 @@
         printf("找不到视频流信息");
         return;
     }
+    //将AVFormat打印出来
+    av_dump_format(avFormatContext, 0, input_str_full, 0);
     //查找流索引
     int video_stream_index=-1;
     for (int i=0; i<avFormatContext->nb_streams; i++) {
